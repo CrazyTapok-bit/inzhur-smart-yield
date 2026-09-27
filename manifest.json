@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Inzhur Smart Yield — Реальна дохідність ОВДП",
+  "version": "1.0.0",
+  "description": "Автоматично розраховує реальну річну дохідність, чистий прибуток у ₴ та підсвічує найвигідніші ОВДП на сайті Inzhur.",
+  "homepage_url": "https://github.com/ВАШ_НІК/inzhur-ovdp-calculator",
+  "author": "Inzhur Community Developer",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://inzhur.reit/*"
+      ],
+      "js": [
+        "src/content.js"
+      ],
+      "css": [
+        "src/styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  }
+}

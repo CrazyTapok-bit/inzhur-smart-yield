@@ -1,0 +1,85 @@
+/* Основний блок розрахунку */
+.ovdz-calc-container {
+  margin-top: 10px;
+  padding: 8px;
+  border-top: 2px dashed #00b050;
+  background-color: rgba(0, 176, 80, 0.04);
+}
+
+.ovdz-calc-divider {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #008037;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.ovdz-highlight {
+  background-color: rgba(0, 176, 80, 0.12);
+  padding: 10px !important;
+  width: calc(100% + 16px) !important;
+  border-radius: 4px;
+  margin: 0px -8px;
+}
+
+.ovdz-highlight .up_case {
+  color: #000000 !important;
+}
+
+.ovdz-highlight .up_case strong {
+  font-weight: 500 !important;
+}
+
+.ovdz-green {
+  color: #008f39 !important;
+  font-size: 1.05em;
+}
+
+/* --- СТИЛІ ДЛЯ ТОП ОВДП --- */
+
+/* Контейнер картки-лідера отримує позиціонування та золотисту рамку */
+.investment-unit.ovdz-top-card {
+  position: relative;
+  outline: 2px solid #ffb703 !important;
+  box-shadow: 0 0 15px rgba(255, 183, 3, 0.35) !important;
+  transition: all 0.3s ease;
+}
+
+.investment-unit .wrapper {
+  position: relative;
+}
+
+/* Плашка "ТОП ДОХІДНІСТЬ" у правому верхньому кутку картки */
+.ovdz-top-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: linear-gradient(135deg, #ff9e00, #ff0054);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(255, 0, 84, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  animation: ovdz-pulse 2s infinite alternate;
+}
+
+/* Легкий ефект пульсації для бейджа */
+@keyframes ovdz-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgba(255, 0, 84, 0.4);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(255, 0, 84, 0.7);
+  }
+}
