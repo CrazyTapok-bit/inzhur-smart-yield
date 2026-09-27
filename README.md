@@ -6,8 +6,7 @@
 
 Також розширення автоматично знаходить та підсвічує найбільш вигідну пропозицію плашкою **«🔥 ТОП ДОХІДНІСТЬ»**.
 
-<video src="./assets/demo.mp4" autoplay loop muted playsinline width="100%"></video>
-
+https://github.com/user-attachments/assets/c3f515ef-f667-4144-8b55-9f72048f91c8
 
 ## 🎁 Отримай бонус від Inzhur
 
